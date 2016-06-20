@@ -8,9 +8,9 @@ int main(int argc, char *argv[]){
 	while(cont < i){
 		char letra[55];
 		int chave, j = 0;
-		scanf(" %s", letra);
+		scanf("%s", letra);
 		scanf("%d", &chave);
-		char *cripto = (char *)malloc(55);
+		char cripto[55];
 		while(j < strlen(letra)){
 				if(letra[j] - chave < 65){
 					int dif;
@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 		}
 		printf("%s\n", cripto);
 		cont++;	
-		free(cripto);
+		
 	}
 
 
